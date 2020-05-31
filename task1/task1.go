@@ -1,7 +1,7 @@
-package main
+package task1
 
 import (
-"encoding/json"
+	"encoding/json"
 "fmt"
 "io/ioutil"
 "log"
@@ -60,7 +60,7 @@ func getNextHoliday () holiday {
 	return  keys[0]		// return closest holiday
 }
 
-func main() {
+func Work() {
 	var result string
 	nextHoliday := getNextHoliday()
 	nextHolidayDate, nextHolidayName := stringToDate(nextHoliday.Date), nextHoliday.LocalName
