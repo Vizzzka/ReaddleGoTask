@@ -4,7 +4,9 @@ Implemented Go application for Readdle Internship
 ## Statement
 
 Statement of tasks:
+
 Test task 1 (HTTP, APIs, time)
+
 Use 3rd-party JSON API: https://date.nager.at/PublicHoliday/Country/UA
 Write a console application that prints if it’s a holiday today (and the name of it). If today isn’t a holiday, the application should print the next closest holiday. 
 
@@ -33,9 +35,22 @@ mysql -t < employees.sql
 ```
 
 ## Important details of implementation
-0. task1 and task2 packages have Work() function which does main job and is called in main package. To run the app just run main.go in main package.
 1. Default user and password for db: root ''
 2. Second query in task2 has to big output so this query was limitted to 50 ROWS. 
 3. Third query in task2 takes in count only current employees because due to the statement we must display their title.
+
+## Usage
+``` go
+import (
+	"InternshipTask/task1"
+	"InternshipTask/task2"
+)
+
+func main() {
+	task1.Work()
+	task2.Work()
+}
+  
+```
 
 
