@@ -11,5 +11,4 @@ func main() {
 	task1.Work()
 	fmt.Println("\n\n--------- Task 2 ---------")
 	task2.Work()
-
 }
